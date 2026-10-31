@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kỹ năng quản lý và lãnh đạo</title>
+<meta name="description" content="Khóa học kỹ năng quản lý và lãnh đạo bằng tiếng Việt: 8 module, slide, thẻ ôn tập và câu hỏi tự kiểm tra.">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#312e81">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="QL Lãnh đạo">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta property="og:title" content="Kỹ năng quản lý và lãnh đạo">
+<meta property="og:description" content="Khoá học tiếng Việt: slide, flashcard và quiz.">
+<meta property="og:image" content="https://binhfoodsafety.github.io/Managers_Handbook_Training/icons/icon-512.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #edf1f3; --paper: #fbfcfc; --ink: #1c2a30; --ink-2: #43535b; --muted: #72828a; --line: #d8dfe2;
+    --brand: #17627a; --brand-soft: #e1eff3; --warn: #b5651d;
+    --font: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101518; --paper: #182024; --ink: #e4ebee; --ink-2: #b8c4ca; --muted: #8a979e; --line: #2c373c;
+      --brand: #62bfd8; --brand-soft: #1b3038; --warn: #e0a060;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101518; --paper: #182024; --ink: #e4ebee; --ink-2: #b8c4ca; --muted: #8a979e; --line: #2c373c;
+    --brand: #62bfd8; --brand-soft: #1b3038; --warn: #e0a060;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); line-height: 1.5; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 28px 24px 48px; }
+  header { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+  .eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--brand); font-weight: 700; }
+  h1 { margin: 4px 0 6px; font-size: clamp(26px, 4vw, 38px); line-height: 1.15; }
+  .lead { margin: 0; color: var(--ink-2); max-width: 720px; }
+  .stats { display: flex; gap: 22px; }
+  .stats b { display: block; font-size: 24px; color: var(--brand); font-variant-numeric: tabular-nums; }
+  .stats span { font-size: 12px; color: var(--muted); }
+
+  .viewer { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.05); }
+  .bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+  .bar label { font-weight: 600; font-size: 14px; }
+  select, .btn { font: inherit; font-size: 14px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); border-radius: 10px; padding: 9px 12px; min-height: 40px; }
+  select { flex: 1; min-width: 220px; max-width: 560px; cursor: pointer; }
+  .btn { cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+  .btn:hover { border-color: var(--brand); color: var(--brand); }
+  .btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+  .btn.primary:hover { color: #fff; filter: brightness(1.08); }
+  .frame { position: relative; width: 100%; aspect-ratio: 16 / 10; border-radius: 12px; overflow: hidden; background: var(--bg); border: 1px solid var(--line); }
+  .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .desc { margin: 12px 4px 0; color: var(--ink-2); font-size: 14px; }
+
+  h2 { font-size: 20px; margin: 34px 0 14px; }
+  .modules { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  .mod { text-align: left; font: inherit; color: inherit; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px; cursor: pointer; display: grid; grid-template-columns: 34px 1fr; gap: 14px; transition: transform .15s, border-color .15s; }
+  .mod:hover { transform: translateY(-2px); border-color: var(--brand); }
+  .mod[aria-current="true"] { border-color: var(--brand); box-shadow: inset 0 0 0 1px var(--brand); }
+  .mod .n { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--brand-soft); color: var(--brand); font-weight: 800; }
+  .mod h3 { margin: 0 0 4px; font-size: 16px; line-height: 1.3; }
+  .mod p { margin: 0 0 8px; font-size: 13px; color: var(--ink-2); }
+  .mod small { font-size: 12px; color: var(--muted); }
+
+  .notes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  .note { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; font-size: 14px; color: var(--ink-2); }
+  .note b { color: var(--ink); display: block; margin-bottom: 4px; }
+  kbd { font-family: inherit; font-size: 12px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; padding: 0 5px; background: var(--bg); }
+  footer { margin-top: 36px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+
+  .tools { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .tool { display: block; background: var(--paper); border: 2px solid #0f766e; border-radius: 14px; padding: 16px 18px; font-size: 14px; color: var(--ink-2); text-decoration: none; }
+  .tool:hover { transform: translateY(-2px); }
+  .tool b { display: block; font-size: 16px; color: var(--ink); margin-bottom: 4px; }
+  @media (max-width: 900px) { .modules, .notes { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) {
+    .wrap { padding: 18px 16px 36px; }
+    .modules, .notes, .tools { grid-template-columns: 1fr; }
+    .frame { aspect-ratio: auto; height: 72vh; }
+    .bar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .bar label, #playBtn { display: none; }
+    /* Từ 16px trở lên iOS mới không tự phóng to khi chọn */
+    select { grid-column: 1 / -1; min-width: 0; width: 100%; max-width: none; font-size: 16px; }
+    .bar .btn { justify-content: center; padding: 9px 2px; font-size: 13px; white-space: nowrap; }
+  }
+  header { background: linear-gradient(120deg, #0f172a 0%, #312e81 55%, #0f766e 100%); color: #fff; padding: 26px 28px; border-radius: 18px; }
+  header .eyebrow { color: #fde68a; } header h1 { color: #fff; } header .lead { color: #e2e8f0; }
+  .stats b { color: #fde68a; } .stats span { color: #e2e8f0; }
+  .mod { grid-template-columns: 58px 1fr; background: color-mix(in srgb, var(--c) 9%, var(--paper)); border: 2px solid color-mix(in srgb, var(--c) 40%, var(--paper)); }
+  .mod:hover { border-color: var(--c); } .mod[aria-current="true"] { border-color: var(--c); box-shadow: inset 0 0 0 1px var(--c); }
+  .mod .n { width: 58px; height: 58px; background: #fff; border-radius: 50%; padding: 7px; box-shadow: 0 0 0 2px var(--c); } .mod .n img { width: 100%; height: 100%; display: block; }
+  .mod h3 { color: color-mix(in srgb, var(--c) 82%, var(--ink)); }
+  .note { border-width: 2px; } .note:nth-child(1) { border-color: #4f46e5; } .note:nth-child(2) { border-color: #0f766e; } .note:nth-child(3) { border-color: #c2410c; } .note:nth-child(4) { border-color: #7c3aed; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">MANAGER SKILLS · CHƯƠNG TRÌNH ĐÀO TẠO</div>
+      <h1>Kỹ năng quản lý và lãnh đạo</h1>
+      <p class="lead">Chương trình dành cho quản lý nhóm và những người chuẩn bị đảm nhận vai trò quản lý. Học qua tình huống, slide thuyết minh và câu hỏi tự luyện.</p>
+    </div>
+    <div class="stats"><div><b>8</b><span>Module</span></div><div><b id="totalSlides">104</b><span>Slide</span></div><div><b>96</b><span>Flashcard</span></div><div><b>96</b><span>Câu quiz</span></div></div>
+  </header>
+
+  <section class="viewer" aria-label="Xem slide">
+    <div class="bar">
+      <label for="moduleSelect">Nội dung:</label>
+      <select id="moduleSelect"></select>
+      <button class="btn primary" id="playBtn" type="button" title="Phát thuyết minh từ slide đầu, tự chuyển slide">▶ Trình chiếu có thuyết minh</button>
+      <a class="btn" id="openBtn" href="#" target="_blank" rel="noopener" title="Mở trong tab mới để trình chiếu toàn màn hình">⛶ Mở tab mới</a>
+      <a class="btn" id="fcBtn" href="on-tap.html" title="Ôn module này bằng thẻ lật">🃏 Flashcard</a>
+      <a class="btn" id="quizBtn" href="on-tap.html" title="Tự kiểm tra module này">🎯 Quiz</a>
+    </div>
+    <div class="frame"><iframe id="deckFrame" title="Slide Kỹ năng quản lý và lãnh đạo" allow="fullscreen; autoplay"></iframe></div>
+    <p class="desc" id="moduleDesc"></p>
+  </section>
+
+  <h2>Ôn tập</h2>
+  <div class="tools"><a class="tool" href="on-tap.html"><b>🃏 Flashcard và quiz</b>Ôn theo từng module hoặc trộn nội dung cả khóa học.</a></div>
+
+  <h2>Lộ trình 8 module</h2>
+  <div class="modules" id="moduleList"></div>
+
+  <h2>Cách sử dụng</h2>
+  <div class="notes">
+    <div class="note"><b>Điều khiển slide</b>Dùng <kbd>←</kbd> <kbd>→</kbd> hoặc nút Trước / Tiếp; <kbd>F</kbd> toàn màn hình; vuốt trái / phải trên điện thoại. Màn hình hẹp tự chuyển sang dạng cuộn và vẫn có thanh thuyết minh ở đáy.</div>
+    <div class="note"><b>Thuyết minh âm thanh</b>Bấm <kbd>▶ Phát</kbd> trên thanh dưới slide (hoặc <kbd>P</kbd>). Đọc xong tự chuyển slide; chỉnh tốc độ 0,9–1,4×; nút 📝 hiện lời đọc.</div>
+    <div class="note"><b>Lưu ý về giọng đọc</b>Dùng Google Translate TTS nên cần Internet; nội dung lời đọc được gửi tới Google. Không gửi thông tin người học.</div>
+    <div class="note"><b>Cài lên iPhone</b>Mở trang bằng Safari, bấm nút Chia sẻ rồi chọn <kbd>Thêm vào MH chính</kbd>. Sau khi mở một lần, slide, flashcard và quiz dùng được khi không có mạng; giọng đọc vẫn cần Internet.</div>
+  </div>
+
+  <footer>Bài học diễn đạt lại các khái niệm quản lý thành nội dung đào tạo thực hành. Tiến độ lưu trên trình duyệt của người học; không thu thập thông tin cá nhân.</footer>
+</div>
+
+<script>
+  var MODULES = [
+
+    {
+        "file": "slides/01-chuyen-vai-tro.html",
+        "title": "Chuyển từ chuyên viên sang quản lý",
+        "desc": "Đổi trọng tâm từ tự mình hoàn thành sang giúp cả nhóm làm tốt.",
+        "slides": 13,
+        "color": "#4f46e5",
+        "art": "slides/art/m1.svg"
+    },
+    {
+        "file": "slides/02-niem-tin-cam-xuc.html",
+        "title": "Xây dựng niềm tin và trí tuệ cảm xúc",
+        "desc": "Tạo quan hệ đáng tin cậy và phản ứng có chủ đích trong những lúc căng thẳng.",
+        "slides": 13,
+        "color": "#be123c",
+        "art": "slides/art/m2.svg"
+    },
+    {
+        "file": "slides/03-chien-luoc-anh-huong.html",
+        "title": "Định vị thành công và tạo ảnh hưởng",
+        "desc": "Kết nối mục tiêu nhóm với ưu tiên chung và xây dựng sự ủng hộ bằng quan hệ.",
+        "slides": 13,
+        "color": "#0f766e",
+        "art": "slides/art/m3.svg"
+    },
+    {
+        "file": "slides/04-giao-tiep-nang-suat.html",
+        "title": "Giao tiếp và năng suất cá nhân",
+        "desc": "Truyền đạt rõ, tổ chức thời gian và duy trì năng lượng cho công việc quan trọng.",
+        "slides": 13,
+        "color": "#c2410c",
+        "art": "slides/art/m4.svg"
+    },
+    {
+        "file": "slides/05-phat-trien-ban-than.html",
+        "title": "Phát triển bản thân",
+        "desc": "Chủ động định hướng nghề nghiệp, tìm phản hồi và biến học hỏi thành trải nghiệm.",
+        "slides": 13,
+        "color": "#7c3aed",
+        "art": "slides/art/m5.svg"
+    },
+    {
+        "file": "slides/06-uy-quyen-phan-hoi.html",
+        "title": "Ủy quyền, phản hồi và phát triển nhân tài",
+        "desc": "Giao việc rõ ràng, tạo trách nhiệm và giúp nhân viên nâng cao năng lực.",
+        "slides": 13,
+        "color": "#0369a1",
+        "art": "slides/art/m6.svg"
+    },
+    {
+        "file": "slides/07-doi-nhom-sang-tao.html",
+        "title": "Dẫn dắt đội nhóm và khơi gợi sáng tạo",
+        "desc": "Tổ chức cách làm việc chung để nhiều góc nhìn tạo ra kết quả tốt hơn.",
+        "slides": 13,
+        "color": "#15803d",
+        "art": "slides/art/m7.svg"
+    },
+    {
+        "file": "slides/08-quan-ly-kinh-doanh.html",
+        "title": "Quản lý hoạt động kinh doanh",
+        "desc": "Liên kết chiến lược, nguồn lực và luận cứ kinh doanh để đạt kết quả.",
+        "slides": 13,
+        "color": "#a21caf",
+        "art": "slides/art/m8.svg"
+    }
+
+  ];
+
+  var sel = document.getElementById('moduleSelect');
+  var frame = document.getElementById('deckFrame');
+  var openBtn = document.getElementById('openBtn');
+  var descEl = document.getElementById('moduleDesc');
+  var list = document.getElementById('moduleList');
+
+  function theme() {
+    var forced = document.documentElement.getAttribute('data-theme');
+    if (forced) return forced;
+    return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  MODULES.forEach(function (m, i) {
+    var o = document.createElement('option');
+    o.value = i;
+    o.textContent = 'Module ' + (i + 1) + ' · ' + m.title + ' (' + m.slides + ' slide)';
+    sel.appendChild(o);
+
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'mod';
+    b.style.setProperty('--c', m.color);
+    b.innerHTML = '<span class="n"><img src="' + m.art + '" alt=""></span><span><h3></h3><p></p><small>Module ' + (i + 1) + ' · ' + m.slides + ' slide</small></span>';
+    b.querySelector('h3').textContent = m.title;
+    b.querySelector('p').textContent = m.desc;
+    b.addEventListener('click', function () { select(i); document.querySelector('.viewer').scrollIntoView({ behavior: 'smooth' }); });
+    list.appendChild(b);
+  });
+  document.getElementById('totalSlides').textContent = MODULES.reduce(function (s, m) { return s + m.slides; }, 0);
+
+  function select(i) {
+    var m = MODULES[i];
+    sel.value = i;
+    frame.src = m.file + '?theme=' + theme();
+    openBtn.href = m.file;
+    document.getElementById('fcBtn').href = 'on-tap.html#m' + (i + 1);
+    document.getElementById('quizBtn').href = 'on-tap.html#m' + (i + 1) + '-quiz';
+    descEl.textContent = m.desc;
+    Array.prototype.forEach.call(list.children, function (b, k) { b.setAttribute('aria-current', String(k === i)); });
+    try { localStorage.setItem('mh_module', i); } catch (e) {}
+    if (history.replaceState) history.replaceState(null, '', '#m' + (i + 1));
+  }
+
+  sel.addEventListener('change', function () { select(Number(sel.value)); });
+  document.getElementById('playBtn').addEventListener('click', function () {
+    try { frame.contentWindow.postMessage({ type: 'pt-play' }, location.origin); } catch (e) {}
+    frame.focus();
+  });
+
+  var fromHash = /^#m(\d)/.exec(location.hash);
+  var saved = null;
+  try { saved = localStorage.getItem('mh_module'); } catch (e) {}
+  var startIdx = fromHash ? Number(fromHash[1]) - 1 : (saved !== null ? Number(saved) : 0);
+  select(startIdx >= 0 && startIdx < MODULES.length ? startIdx : 0);
+</script>
+<script src="pwa.js"></script>
+</body>
+</html>
