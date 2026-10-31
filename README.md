@@ -6,16 +6,16 @@ Khóa học tiếng Việt dành cho quản lý nhóm và người chuẩn bị 
 
 | # | Module | Slide | Thẻ | Câu hỏi |
 |---|---|---:|---:|---:|
-| 1 | Chuyển từ chuyên viên sang quản lý | 13 | 12 | 12 |
-| 2 | Xây dựng niềm tin và trí tuệ cảm xúc | 13 | 12 | 12 |
-| 3 | Định vị thành công và tạo ảnh hưởng | 13 | 12 | 12 |
-| 4 | Giao tiếp và năng suất cá nhân | 13 | 12 | 12 |
-| 5 | Phát triển bản thân | 13 | 12 | 12 |
-| 6 | Ủy quyền, phản hồi và phát triển nhân tài | 13 | 12 | 12 |
-| 7 | Dẫn dắt đội nhóm và khơi gợi sáng tạo | 13 | 12 | 12 |
-| 8 | Quản lý hoạt động kinh doanh | 13 | 12 | 12 |
+| 1 | Chuyển từ chuyên viên sang quản lý | 15 | 13 | 13 |
+| 2 | Xây dựng niềm tin và trí tuệ cảm xúc | 15 | 13 | 13 |
+| 3 | Định vị thành công và tạo ảnh hưởng | 15 | 13 | 13 |
+| 4 | Giao tiếp và năng suất cá nhân | 15 | 13 | 13 |
+| 5 | Phát triển bản thân | 15 | 13 | 13 |
+| 6 | Ủy quyền, phản hồi và phát triển nhân tài | 15 | 13 | 13 |
+| 7 | Dẫn dắt đội nhóm và khơi gợi sáng tạo | 15 | 13 | 13 |
+| 8 | Quản lý hoạt động kinh doanh | 15 | 13 | 13 |
 
-Tổng cộng: 104 slide, 96 flashcard và 96 câu quiz.
+Tổng cộng: 120 slide, 104 flashcard và 104 câu quiz.
 
 ## Dùng trên máy
 
@@ -30,3 +30,8 @@ Mở `on-tap.html` và chọn module. `on-tap.html#m3` mở thẻ của module 3
 Giọng đọc tiếng Việt dùng Google Translate TTS, cần Internet; phần văn bản đọc được gửi tới Google. Học liệu vẫn xem được khi ngoại tuyến, nhưng thuyết minh cần mạng.
 
 Nội dung được diễn đạt lại thành bài học đào tạo thực hành từ tài liệu quản lý được cung cấp. Ví dụ không đại diện cho một tổ chức cụ thể.
+
+
+## Bản mở rộng
+
+Mỗi module có thêm infographic tự vẽ và bài thực hành tình huống với gợi ý mở rộng. Ví dụ giả định; điều chỉnh theo quyền hạn, rủi ro và bối cảnh. Xem [danh mục nguồn tham khảo](NGUON_THAM_KHAO.md).

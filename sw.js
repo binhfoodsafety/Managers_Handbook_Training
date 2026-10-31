@@ -1,5 +1,5 @@
 // Cache riêng cho khóa học này; chỉ xoá các phiên bản có cùng tiền tố.
-var CACHE = 'mh-leadership-v1';
+var CACHE = 'mh-leadership-v2';
 var FILES = [
   "./",
   "./index.html",
@@ -20,20 +20,28 @@ var FILES = [
   "./study/study.js",
   "./slides/01-chuyen-vai-tro.html",
   "./slides/art/m1.svg",
+  "./slides/art/m1-infographic.svg",
   "./slides/02-niem-tin-cam-xuc.html",
   "./slides/art/m2.svg",
+  "./slides/art/m2-infographic.svg",
   "./slides/03-chien-luoc-anh-huong.html",
   "./slides/art/m3.svg",
+  "./slides/art/m3-infographic.svg",
   "./slides/04-giao-tiep-nang-suat.html",
   "./slides/art/m4.svg",
+  "./slides/art/m4-infographic.svg",
   "./slides/05-phat-trien-ban-than.html",
   "./slides/art/m5.svg",
+  "./slides/art/m5-infographic.svg",
   "./slides/06-uy-quyen-phan-hoi.html",
   "./slides/art/m6.svg",
+  "./slides/art/m6-infographic.svg",
   "./slides/07-doi-nhom-sang-tao.html",
   "./slides/art/m7.svg",
+  "./slides/art/m7-infographic.svg",
   "./slides/08-quan-ly-kinh-doanh.html",
-  "./slides/art/m8.svg"
+  "./slides/art/m8.svg",
+  "./slides/art/m8-infographic.svg"
 ];
 self.addEventListener('install', function(e){ e.waitUntil(caches.open(CACHE).then(function(c){return c.addAll(FILES.map(function(f){return new Request(f,{cache:'no-cache'});}));}).then(function(){return self.skipWaiting();})); });
 self.addEventListener('activate', function(e){ e.waitUntil(caches.keys().then(function(keys){return Promise.all(keys.filter(function(k){return k.indexOf('mh-leadership-')===0&&k!==CACHE;}).map(function(k){return caches.delete(k);}));}).then(function(){return self.clients.claim();})); });

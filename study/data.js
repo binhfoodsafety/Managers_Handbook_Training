@@ -49,6 +49,10 @@ var STUDY = [
       {
         "q": "Thành công của người quản lý gắn nhất với điều gì?",
         "a": "Khả năng giúp cả nhóm đạt kết quả"
+      },
+      {
+        "q": "Giá trị của quản lý chuyển dịch về đâu?",
+        "a": "Khả năng tạo kết quả thông qua cả nhóm"
       }
     ],
     "quiz": [
@@ -171,7 +175,7 @@ var STUDY = [
           "Chờ đến hạn mới báo"
         ],
         "why": "Đàm phán ưu tiên giúp nhóm hiểu sự đánh đổi.",
-        "s": 13
+        "s": 15
       },
       {
         "q": "Thành công của người quản lý gắn nhất với điều gì?",
@@ -182,7 +186,18 @@ var STUDY = [
           "Mức độ tự mình kiểm soát mọi việc"
         ],
         "why": "Trọng tâm chuyển từ đóng góp riêng sang kết quả tập thể.",
-        "s": 13
+        "s": 15
+      },
+      {
+        "q": "Nhân viên gặp khó trong việc bạn từng làm nhanh. Bước mở đầu?",
+        "c": "Hỏi họ đã thử gì và đang vướng ở đâu",
+        "w": [
+          "Giành lại việc để bảo đảm tốc độ",
+          "Chỉ nói họ cần tự chủ hơn",
+          "Chờ kỳ đánh giá cuối năm"
+        ],
+        "why": "Câu hỏi giúp hiểu trở ngại trước khi can thiệp.",
+        "s": 14
       }
     ]
   },
@@ -235,6 +250,10 @@ var STUDY = [
       {
         "q": "Điều gì củng cố uy tín sau khi mắc lỗi?",
         "a": "Nhận trách nhiệm và khắc phục rõ ràng"
+      },
+      {
+        "q": "An toàn tâm lý giúp thành viên làm gì?",
+        "a": "Nêu vấn đề mà không sợ bị làm nhục"
       }
     ],
     "quiz": [
@@ -369,6 +388,17 @@ var STUDY = [
         ],
         "why": "Sửa sai minh bạch cho thấy hành động phù hợp với giá trị đã nêu.",
         "s": 3
+      },
+      {
+        "q": "Thành viên nêu rủi ro. Phản ứng nào khuyến khích học hỏi?",
+        "c": "Cảm ơn, hỏi dữ kiện và đánh giá tác động",
+        "w": [
+          "Hỏi ai cho phép làm chậm cuộc họp",
+          "Bác bỏ vì chưa có giải pháp",
+          "Chờ họp xong rồi phê bình"
+        ],
+        "why": "Mở đường cho thông tin quan trọng đồng thời đánh giá thực tế.",
+        "s": 13
       }
     ]
   },
@@ -421,6 +451,10 @@ var STUDY = [
       {
         "q": "Một yêu cầu rõ ràng trong đề xuất là gì?",
         "a": "Quyết định hoặc nguồn lực cần ở bước tiếp theo"
+      },
+      {
+        "q": "Lựa chọn chiến lược cần nêu gì ngoài việc sẽ làm?",
+        "a": "Điều gì ưu tiên và điều gì tạm gác"
       }
     ],
     "quiz": [
@@ -555,6 +589,17 @@ var STUDY = [
         ],
         "why": "Người nghe cần biết hành động cụ thể nào được đề nghị.",
         "s": 9
+      },
+      {
+        "q": "Nhiều ưu tiên nhưng không nói điều sẽ dừng. Rủi ro?",
+        "c": "Nguồn lực chia mỏng, lựa chọn thiếu rõ",
+        "w": [
+          "Ai cũng tự biết việc quan trọng",
+          "Chiến lược tự ổn định hơn",
+          "Không cần hỏi bên liên quan"
+        ],
+        "why": "Không nói điều tạm gác dễ tạo quá nhiều cam kết.",
+        "s": 13
       }
     ]
   },
@@ -607,6 +652,10 @@ var STUDY = [
       {
         "q": "Điều gì giúp duy trì năng suất bền vững?",
         "a": "Kết hợp ưu tiên, tập trung và phục hồi"
+      },
+      {
+        "q": "Cuối cuộc họp hiệu quả, cần xác nhận gì?",
+        "a": "Quyết định, người làm và bước tiếp"
       }
     ],
     "quiz": [
@@ -740,7 +789,18 @@ var STUDY = [
           "Luôn đặt lịch kín"
         ],
         "why": "Hiệu quả cần cả lựa chọn công việc lẫn khả năng duy trì năng lượng.",
-        "s": 13
+        "s": 15
+      },
+      {
+        "q": "Sau cuộc họp, mỗi người nhớ một việc khác nhau. Điều gì thiếu?",
+        "c": "Xác nhận quyết định, người phụ trách, bước tiếp",
+        "w": [
+          "Thêm vòng cập nhật miệng",
+          "Gửi toàn bộ biên bản cũ",
+          "Tăng số người họp"
+        ],
+        "why": "Khép vòng giúp mọi người rời cuộc họp cùng cách hiểu.",
+        "s": 14
       }
     ]
   },
@@ -793,6 +853,10 @@ var STUDY = [
       {
         "q": "Sau khi thử hành vi mới, bước tiếp theo là gì?",
         "a": "Xin phản hồi và xem kết quả thực tế"
+      },
+      {
+        "q": "Mục tiêu phát triển tốt nên mô tả gì?",
+        "a": "Hành vi cụ thể trong một cơ hội thật"
       }
     ],
     "quiz": [
@@ -927,6 +991,17 @@ var STUDY = [
         ],
         "why": "Đánh giá kết quả giúp củng cố hoặc điều chỉnh cách làm.",
         "s": 9
+      },
+      {
+        "q": "“Tôi sẽ giao tiếp tốt hơn” khó đánh giá vì thiếu gì?",
+        "c": "Hành vi cụ thể và tình huống để thực hành",
+        "w": [
+          "Một khóa học bắt buộc",
+          "Một chức danh mới",
+          "Danh sách phẩm chất chung"
+        ],
+        "why": "Hành vi thật giúp thử, quan sát và nhận phản hồi.",
+        "s": 13
       }
     ]
   },
@@ -979,6 +1054,10 @@ var STUDY = [
       {
         "q": "Để kiểm tra việc giao nhiệm vụ được hiểu đúng, nên làm gì?",
         "a": "Nhờ người nhận tóm tắt kế hoạch của họ"
+      },
+      {
+        "q": "Trước khi trao quyền, điều gì cần làm rõ?",
+        "a": "Kết quả, ranh giới và điều phải báo"
       }
     ],
     "quiz": [
@@ -1112,7 +1191,18 @@ var STUDY = [
           "Đợi đến hạn mới kiểm tra"
         ],
         "why": "Tóm tắt giúp phát hiện khác biệt về mục tiêu hoặc kỳ vọng.",
-        "s": 13
+        "s": 15
+      },
+      {
+        "q": "Giao việc lớn cho nhân viên mới. Cách nào cân bằng học và rủi ro?",
+        "c": "Phạm vi rõ, xem bản nháp sớm, tăng quyền dần",
+        "w": [
+          "Để tự quyết hoàn toàn",
+          "Duyệt mọi thao tác nhỏ",
+          "Giữ việc cho quản lý"
+        ],
+        "why": "Điểm kiểm sớm hỗ trợ học và phát hiện sai lệch kịp lúc.",
+        "s": 14
       }
     ]
   },
@@ -1165,6 +1255,10 @@ var STUDY = [
       {
         "q": "Điều gì hỗ trợ giữ động lực của nhân viên?",
         "a": "Cơ hội đóng góp, học hỏi và được ghi nhận"
+      },
+      {
+        "q": "Vì sao nên tách nảy ý tưởng khỏi đánh giá?",
+        "a": "Để đánh giá sớm không hẹp phương án"
       }
     ],
     "quiz": [
@@ -1299,6 +1393,17 @@ var STUDY = [
         ],
         "why": "Nhân viên thường gắn bó hơn khi thấy công việc có cơ hội phát triển và đóng góp.",
         "s": 10
+      },
+      {
+        "q": "Nhóm bác bỏ ý tưởng ngay khi vừa nêu. Bạn thử cách nào?",
+        "c": "Cho mọi người nghĩ riêng rồi lần lượt chia sẻ",
+        "w": [
+          "Để quản lý chọn ý đầu",
+          "Bỏ qua vấn đề",
+          "Chỉ mời người thâm niên"
+        ],
+        "why": "Nghĩ riêng mở rộng lựa chọn trước khi cả nhóm đánh giá.",
+        "s": 13
       }
     ]
   },
@@ -1351,6 +1456,10 @@ var STUDY = [
       {
         "q": "Nếu dữ liệu đề xuất chưa đầy đủ, lựa chọn nào hợp lý?",
         "a": "Đề nghị bước thử có phạm vi và cách đánh giá rõ"
+      },
+      {
+        "q": "Vì sao cần kiểm tra giả định?",
+        "a": "Quyết định phụ thuộc điều có thể chưa đúng"
       }
     ],
     "quiz": [
@@ -1485,9 +1594,18 @@ var STUDY = [
         ],
         "why": "Thử có kiểm soát tạo thêm thông tin trước quyết định tiếp theo.",
         "s": 11
+      },
+      {
+        "q": "Dự báo nhu cầu chưa xác nhận. Bước hợp lý?",
+        "c": "Kiểm tra giả định, cân nhắc thử nghiệm giới hạn",
+        "w": [
+          "Bỏ qua rủi ro vì đã dự báo",
+          "Cam kết mọi nguồn lực ngay",
+          "Xem chi phí sau khi bắt đầu"
+        ],
+        "why": "Thử giới hạn giúp thu thập thông tin trước cam kết lớn.",
+        "s": 14
       }
     ]
   }
 ];
-
-
